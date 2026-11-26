@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow — Personal Workspace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a class="brand" href="#overview">
+            <div class="brand-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h1>TaskFlow<span>.</span></h1>
+                <p>Personal workspace</p>
+            </div>
+        </a>
+
+        <div class="nav-label">WORKSPACE</div>
+
+        <nav class="navigation">
+
+            <a href="#overview" class="nav-link active">
+                <i class="fa-solid fa-table-columns"></i>
+                Tổng quan
+            </a>
+
+            <a href="#task-section" class="nav-link">
+                <i class="fa-solid fa-list-check"></i>
+                Công việc
+            </a>
+
+            <a href="#statistics" class="nav-link">
+                <i class="fa-solid fa-chart-simple"></i>
+                Thống kê
+            </a>
+
+            <a href="#progress-section" class="nav-link">
+                <i class="fa-solid fa-chart-pie"></i>
+                Tiến độ
+            </a>
+
+        </nav>
+
+        <div class="nav-label">QUICK ACTION</div>
+
+        <a href="#form-section" class="quick-add">
+            <i class="fa-solid fa-plus"></i>
+            Công việc mới
+        </a>
+
+        <div class="sidebar-bottom">
+
+            <div class="quote-card">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Small steps every day lead to big results.</p>
+            </div>
+
+            <div class="profile">
+
+                <div class="avatar">TF</div>
+
+                <div>
+                    <strong>My Workspace</strong>
+                    <small>Personal account</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="overview">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div class="breadcrumb">
+                Workspace
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Overview</strong>
+            </div>
+
+            <div class="topbar-right">
+                <i class="fa-regular fa-calendar"></i>
+                <span id="todayDate"></span>
+            </div>
+
+        </div>
+
+        <!-- PAGE TITLE -->
+        <div class="page-heading">
+
+            <div>
+                <span class="eyebrow">YOUR PRODUCTIVITY SPACE</span>
+
+                <h2>Make today count.</h2>
+
+                <p>Một ngày hiệu quả bắt đầu từ những mục tiêu nhỏ.</p>
+            </div>
+
+            <a href="#form-section" class="primary-button">
+                <i class="fa-solid fa-plus"></i>
+                Công việc mới
+            </a>
+
+        </div>
+
+        <!-- BANNER -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    <i class="fa-solid fa-sparkles"></i>
+                    STAY PRODUCTIVE
+                </span>
+
+                <h2>Plan better.<br>Achieve more.</h2>
+
+                <p>
+                    Sắp xếp công việc, quản lý thời gian
+                    và theo dõi hành trình hoàn thành mục tiêu.
+                </p>
+
+                <a href="#task-section" class="hero-button">
+                    Khám phá công việc
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-art">
+
+                <div class="decor-circle circle-one"></div>
+                <div class="decor-circle circle-two"></div>
+
+                <div class="floating-card card-calendar">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+
+                <div class="illustration-card">
+
+                    <div class="illustration-heading">
+                        <span>My checklist</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="fake-task">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="fake-task">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="fake-task">
+                        <i class="fa-regular fa-circle"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="fake-task">
+                        <i class="fa-regular fa-circle"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="fake-progress">
+                        <div></div>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-star">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- STATISTICS -->
+        <section id="statistics">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Tổng quan công việc</h2>
+                    <p>Theo dõi hiệu suất làm việc của bạn.</p>
+                </div>
+
+                <span class="section-tag">Overview</span>
+            </div>
+
+            <div class="statistics">
+
+                <div class="card total">
+
+                    <div class="card-top">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                    <h2 id="total">0</h2>
+                    <p>Tổng công việc</p>
+                    <small>Tất cả công việc đã tạo</small>
+
+                </div>
+
+                <div class="card pending">
+
+                    <div class="card-top">
+                        <div class="stat-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                    <h2 id="pending">0</h2>
+                    <p>Chưa thực hiện</p>
+                    <small>Đang chờ bắt đầu</small>
+
+                </div>
+
+                <div class="card progress">
+
+                    <div class="card-top">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-spinner"></i>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                    <h2 id="progress">0</h2>
+                    <p>Đang thực hiện</p>
+                    <small>Tiếp tục cố gắng nhé!</small>
+
+                </div>
+
+                <div class="card completed">
+
+                    <div class="card-top">
+                        <div class="stat-icon">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                    <h2 id="completed">0</h2>
+                    <p>Hoàn thành</p>
+                    <small>Mục tiêu đã đạt được</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROGRESS -->
+        <section class="panel progress-panel" id="progress-section">
+
+            <div class="progress-info">
+
+                <div class="panel-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <h3>Tiến độ hoàn thành</h3>
+                    <p>Mỗi công việc hoàn thành là một bước tiến.</p>
+                </div>
+
+                <span id="percentage">0%</span>
+
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <div class="progress-label">
+                <span>Bắt đầu</span>
+                <span>Hoàn thành mục tiêu</span>
+            </div>
+
+        </section>
+
+        <!-- ADD TASK FORM -->
+        <section class="panel" id="form-section">
+
+            <div class="panel-heading">
+
+                <div class="panel-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+
+                <div>
+                    <h2 id="formTitle">Thêm công việc mới</h2>
+                    <p>Lên kế hoạch cho những việc cần hoàn thành.</p>
+                </div>
+
+            </div>
+
+            <form id="taskForm">
+
+                <input type="hidden" id="taskId">
+
+                <label for="title">
+                    <i class="fa-solid fa-list-check"></i>
+                    Tên công việc <span class="required">*</span>
+                </label>
+
+                <input type="text" id="title"
+                    placeholder="Ví dụ: Hoàn thành báo cáo cuối kỳ"
+                    required>
+
+                <label for="description">
+                    <i class="fa-solid fa-align-left"></i>
+                    Mô tả công việc
+                </label>
+
+                <textarea id="description"
+                    placeholder="Ghi chú những thông tin quan trọng..."></textarea>
+
+                <div class="form-grid">
+
+                    <div>
+                        <label for="deadline">
+                            <i class="fa-regular fa-calendar"></i>
+                            Thời hạn
+                        </label>
+
+                        <input type="date" id="deadline">
+                    </div>
+
+                    <div>
+                        <label for="priority">
+                            <i class="fa-solid fa-flag"></i>
+                            Mức độ ưu tiên
+                        </label>
+
+                        <select id="priority">
+                            <option value="low">Thấp</option>
+                            <option value="medium" selected>Trung bình</option>
+                            <option value="high">Cao</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="status">
+                            <i class="fa-solid fa-bars-progress"></i>
+                            Trạng thái
+                        </label>
+
+                        <select id="status">
+                            <option value="pending">Chưa thực hiện</option>
+                            <option value="progress">Đang thực hiện</option>
+                            <option value="completed">Hoàn thành</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+
+                    <button type="submit" id="submitBtn">
+                        + Thêm công việc
+                    </button>
+
+                    <button type="button" id="cancelBtn" hidden>
+                        Hủy chỉnh sửa
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- TASK LIST -->
+        <section class="panel" id="task-section">
+
+            <div class="panel-heading">
+
+                <div class="panel-icon">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+
+                <div>
+                    <h2>Danh sách công việc</h2>
+                    <p>Quản lý và cập nhật các công việc của bạn.</p>
+                </div>
+
+            </div>
+
+            <div class="toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" id="search"
+                        placeholder="Tìm kiếm công việc...">
+
+                </div>
+
+                <select id="filterStatus">
+
+                    <option value="all">Tất cả trạng thái</option>
+                    <option value="pending">Chưa thực hiện</option>
+                    <option value="progress">Đang thực hiện</option>
+                    <option value="completed">Hoàn thành</option>
+
+                </select>
+
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Công việc</th>
+                            <th>Mô tả</th>
+                            <th>Thời hạn</th>
+                            <th>Ưu tiên</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="taskList"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div>
+                <strong>TaskFlow.</strong>
+                <span>Make every day meaningful.</span>
+            </div>
+
+            <p>© 2026 TaskFlow — Phát triển ứng dụng TMĐT</p>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        // Hiển thị ngày hiện tại
+        document.getElementById("todayDate").textContent =
+            new Date().toLocaleDateString("vi-VN", {
+                weekday: "long",
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            });
+
+        // Hiệu ứng chọn menu
+        document.querySelectorAll(".nav-link").forEach(link => {
+
+            link.addEventListener("click", function () {
+
+                document.querySelectorAll(".nav-link")
+                    .forEach(item => item.classList.remove("active"));
+
+                this.classList.add("active");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
